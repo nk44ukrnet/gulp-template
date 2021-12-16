@@ -1,0 +1,26 @@
+.font(@family: arial, @weight: normal, @style: normal){
+  @font-face{
+    font-family: @family;
+    font-display: swap;
+    src:url('fonts/@{family}.eot');
+    src:url('fonts/@{family}.eot?#iefix') format('embedded-opentype'),
+    url('fonts/@{family}.woff') format('woff'),
+    url('fonts/@{family}.woff2') format('woff2'),
+    url('fonts/@{family}.ttf') format('truetype'),
+    url('fonts/@{family}.svg#icon') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+
+@import "_fonts";
+@import "_header";
+
+
+body {
+  font-size: 16px;
+  display: flex;
+  background-image: url(../img/big_img1.png);
+  background-repeat: no-repeat;
+}
